@@ -1,0 +1,28 @@
+body{
+    background-image: radial-gradient(farthest-corner at 40px 40px,rgb(29, 2, 6) 0%, rgb(6, 3, 43) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 10000px;
+    color: white;
+}
+
+/* this is the container that contains both the text and the frosty-like div*/
+.glassmorphic-container{
+    width:100%;
+    height:200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .glassmorphic-element{ 
+    position:absolute;
+    width:50%;
+    height:200px;
+    /* this is the first property it must have, a transparent background*/
+    background:linear-gradient(to bottom, rgba(154, 107, 197, 0.55),rgba(166, 110, 173, 0.25));
+    left:0;
+    /* this property gives it a backgrounnd blur */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+    }
